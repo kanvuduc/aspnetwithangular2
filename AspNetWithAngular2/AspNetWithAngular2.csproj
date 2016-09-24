@@ -232,6 +232,8 @@
     <Content Include="Scripts\app\app.component.css" />
     <Content Include="Scripts\app\dashboard.component.css" />
     <Content Include="Scripts\app\hero-detail.component.css" />
+    <Content Include="Scripts\app\hero-search.component.css" />
+    <Content Include="Scripts\app\hero-search.component.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -301,12 +303,14 @@
     <TypeScriptCompile Include="Scripts\app\app.routing.ts" />
     <TypeScriptCompile Include="Scripts\app\dashboard.component.ts" />
     <TypeScriptCompile Include="Scripts\app\hero-detail.component.ts" />
+    <TypeScriptCompile Include="Scripts\app\hero-search.component.ts" />
     <TypeScriptCompile Include="Scripts\app\hero.service.ts" />
     <TypeScriptCompile Include="Scripts\app\hero.ts" />
     <TypeScriptCompile Include="Scripts\app\heroes.component.ts" />
     <TypeScriptCompile Include="Scripts\app\heroes.ts" />
     <TypeScriptCompile Include="Scripts\app\in-memory-data.service.ts" />
     <TypeScriptCompile Include="Scripts\app\main.ts" />
+    <TypeScriptCompile Include="Scripts\app\rxjs-extensions.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
