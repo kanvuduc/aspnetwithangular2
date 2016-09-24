@@ -27,7 +27,7 @@ var DashboardComponent = (function () {
     DashboardComponent = __decorate([
         core_1.Component({
             selector: 'dashboard',
-            template: "\n<h3>\nTop Heroes\n</h3>\n<div class=\"grid grid-pad\">\n    <div *ngFor=\"let hero of heroes\" (click)=\"gotoDetail(hero)\" class=\"col-1-4\">\n        <div class=\"module hero\">\n            <h4>{{hero.name}}</h4>\n        </div>\n    </div>\n</div>\n",
+            template: "\n<h3>\nTop Heroes\n</h3>\n<div class=\"grid grid-pad\">\n    <div *ngFor=\"let hero of heroes\" (click)=\"gotoDetail(hero)\" class=\"col-1-4\">\n        <div class=\"module hero\">\n            <h4>{{hero.name}}</h4>\n        </div>\n    </div>\n</div>\n\n<hero-search></hero-search>\n",
             styleUrls: ['Scripts/app/dashboard.component.css']
         }), 
         __metadata('design:paramtypes', [hero_service_1.HeroService, router_1.Router])

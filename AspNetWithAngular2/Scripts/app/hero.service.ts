@@ -5,6 +5,9 @@ import {Hero} from './hero'
 import {Http, Headers} from '@angular/http'
 
 import 'rxjs/add/operator/toPromise'
+import 'rxjs/add/operator/map'
+
+import {Observable} from 'rxjs/Observable'
 
 @Injectable()
 export class HeroService {
@@ -15,6 +18,11 @@ export class HeroService {
 
     constructor(private http: Http) {
 
+    }
+
+    search(term: string): Observable<Hero[]> {
+        return this.http.get(`${this.heroesUrl}?name=${term}`)
+            .map(res => res.json().data as Hero[]);
     }
 
     getHeroes(): Promise<Hero[]> {

@@ -11,6 +11,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
 require('rxjs/add/operator/toPromise');
+require('rxjs/add/operator/map');
 var HeroService = (function () {
     function HeroService(http) {
         this.http = http;
@@ -19,6 +20,10 @@ var HeroService = (function () {
             'Content-Type': 'Application/JSON'
         });
     }
+    HeroService.prototype.search = function (term) {
+        return this.http.get(this.heroesUrl + "?name=" + term)
+            .map(function (res) { return res.json().data; });
+    };
     HeroService.prototype.getHeroes = function () {
         //return Promise.resolve(HEROES);
         return this.http.get(this.heroesUrl)

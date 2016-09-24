@@ -18,6 +18,8 @@ Top Heroes
         </div>
     </div>
 </div>
+
+<hero-search></hero-search>
 `,
     styleUrls: ['Scripts/app/dashboard.component.css']
 })
